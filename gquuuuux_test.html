@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GQuuuuuuX 心理測驗：你屬於哪種鋼彈駕駛員？</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .question-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .question-section h3 {
+            margin-top: 0;
+            color: #004085;
+            font-size: 1.2em;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+        .options label:hover {
+            background-color: #e9ecef;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+            vertical-align: middle;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        #result-section {
+            margin-top: 40px;
+            padding: 25px;
+            border: 2px dashed #007bff;
+            border-radius: 10px;
+            background-color: #e7f3ff;
+            display: none; /* Hidden by default */
+        }
+        #result-section h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #result-content p {
+            margin-bottom: 10px;
+        }
+        #result-content strong {
+            color: #004085;
+        }
+        .character-list {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            padding-left: 20px;
+            border-left: 3px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GQuuuuuuX 心理測驗：你屬於哪種鋼彈駕駛員？</h1>
+        <p>這個心理測驗將根據你在《GQuuuuuuX》世界中的選擇，分析你最接近哪種類型的鋼彈駕駛員。準備好進入宇宙紀元，做出你的抉擇了嗎？</p>
+
+        <div class="question-section" id="q1">
+            <h3>問題 1：當你發現自己捲入一場突如其來的MS戰鬥時，你的第一反應是？</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A. 立即評估戰況，尋找最有利的戰術位置。</label>
+                <label><input type="radio" name="q1" value="B"> B. 優先保護身邊的平民或弱小目標。</label>
+                <label><input type="radio" name="q1" value="C"> C. 興奮不已！終於有機會展現我的技術了！</label>
+                <label><input type="radio" name="q1" value="D"> D. 試圖溝通或尋求和平解決之道。</label>
+            </div>
+        </div>
+
+        <div class="question-section" id="q2">
+            <h3>問題 2：你獲得了一台性能強大的未知MS。你會怎麼做？</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A. 仔細研究其構造和數據，發揮其最大潛力。</label>
+                <label><input type="radio" name="q2" value="B"> B. 立即投入戰場，用實戰來掌握它的特性。</label>
+                <label><input type="radio" name="q2" value="C"> C. 對其外觀和塗裝進行大膽改造，展現個人風格。</label>
+                <label><input type="radio" name="q2" value="D"> D. 考慮它可能帶來的風險，謹慎使用或尋找其來源。</label>
+            </div>
+        </div>
+
+        <div class="question-section" id="q3">
+            <h3>問題 3：在一次危急的MS對決中，你的機體受到了嚴重損傷，但敵人也瀕臨潰敗。你會？</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> A. 即使受損，也要抓住最後機會給予致命一擊。</label>
+                <label><input type="radio" name="q3" value="B"> B. 優先撤退保全機體和性命，日後再戰。</label>
+                <label><input type="radio" name="q3" value="C"> C. 相信自己的技術，即使劣勢也要奮戰到底。</label>
+                <label><input type="radio" name="q3" value="D"> D. 評估敵人是否還有反擊能力，避免不必要的犧牲。</label>
+            </div>
+        </div>
+
+        <div class="question-section" id="q4">
+            <h3>問題 4：對於「非法MS決鬥」這種活動，你的看法是？</h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A. 一個測試技術、獲取資源的有效途徑。</label>
+                <label><input type="radio" name="q4" value="B"> B. 雖然危險，但能為生活帶來刺激和機會。</label>
+                <label><input type="radio" name="q4" value="C"> C. 無論合法與否，戰鬥本身就是一種藝術。</label>
+                <label><input type="radio" name="q4" value="D"> D. 對其潛藏的危險和秩序混亂感到擔憂。</label>
+            </div>
+        </div>
+
+        <div class="question-section" id="q5">
+            <h3>問題 5：如果有一個機會讓你改變歷史，你會想修正哪個時刻？</h3>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A. 影響重大戰役的結果，以達成理想的和平。</label>
+                <label><input type="radio" name="q5" value="B"> B. 避免特定角色的悲劇命運。</label>
+                <label><input type="radio" name="q5" value="C"> C. 參與一場傳奇的MS對決，證明自己的實力。</label>
+                <label><input type="radio" name="q5" value="D"> D. 改善人們的生活條件，讓社會更加公平。</label>
+            </div>
+        </div>
+
+        <button onclick="calculateResult()">查看結果</button>
+
+        <div id="result-section">
+            <h2>你的駕駛員類型是：</h2>
+            <div id="result-content">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+            let scores = { 'A': 0, 'B': 0, 'C': 0, 'D': 0 };
+            let allAnswered = true;
+
+            questions.forEach(qName => {
+                const selectedOption = document.querySelector(`input[name="${qName}"]:checked`);
+                if (selectedOption) {
+                    scores[selectedOption.value]++;
+                } else {
+                    allAnswered = false;
+                }
+            });
+
+            if (!allAnswered) {
+                alert('請回答所有問題才能查看結果！');
+                return;
+            }
+
+            let maxScore = 0;
+            let resultType = '';
+            // Find the type with the highest score
+            for (const type in scores) {
+                if (scores[type] > maxScore) {
+                    maxScore = scores[type];
+                    resultType = type;
+                } else if (scores[type] === maxScore) {
+                    // Handle ties: if multiple types have the same max score, pick one or provide a mixed result
+                    // For simplicity, we'll just stick with the first one found in case of a tie.
+                    // You could implement more complex tie-breaking logic if needed.
+                }
+            }
+
+            displayResult(resultType);
+        }
+
+        function displayResult(type) {
+            const resultSection = document.getElementById('result-section');
+            const resultContent = document.getElementById('result-content');
+            let title = '';
+            let description = '';
+            let characters = [];
+
+            switch (type) {
+                case 'A':
+                    title = '【戰術分析型駕駛員】';
+                    description = '你擁有冷靜的頭腦和出色的戰術規劃能力。你重視數據、分析與效率，總能在混亂的戰場中找到最佳的解決方案。你可能是那種會精準計算推進劑消耗和彈藥存量的策略型王牌。';
+                    characters = [
+                        '《GQuuuuuuX》中的<b>修司</b> (Shuji)：冷靜且目的明確的駕駛員。',
+                        '《機動戰士鋼彈》中的<b>夏亞·阿茲納布爾</b> (Char Aznable)：其卓越的戰術眼光和精準的判斷力。',
+                        '《機動戰士鋼彈》中的<b>阿姆羅·雷</b> (Amuro Ray)：特別是中後期展現出的新人類空間認知與戰術應變能力。'
+                    ];
+                    break;
+                case 'B':
+                    title = '【守護者型駕駛員】';
+                    description = '你擁有一顆溫柔而堅韌的心。你重視生命、和平與責任，總是將他人的安危放在首位。即使身處險境，你也會毫不猶豫地挺身而出，是值得信賴的英雄。';
+                    characters = [
+                        '《GQuuuuuuX》中的<b>天手讓葉 (瑪秋)</b> (Amate Yuzuriha / Machu)：被捲入戰鬥，但其行動多半出於保護身邊的人或反抗不公。',
+                        '《機動戰士鋼彈》中的<b>莎拉·瑪斯</b> (Sayla Mass)：雖然不是主要駕駛員，但她對同伴的關懷與守護。',
+                        '《機動戰士鋼彈》中的<b>布萊德·諾亞</b> (Bright Noa)：作為艦長，他竭盡全力保護艦上成員的安全。'
+                    ];
+                    break;
+                case 'C':
+                    title = '【天生戰鬥狂型駕駛員】';
+                    description = '你對戰鬥本身充滿熱情，享受在極限中挑戰自我。你追求技巧的極致和每一次勝利的快感，血液中流淌著對機動戰士操控的渴望。你或許就是那種擁有驚人直覺與爆發力的戰鬥天才！';
+                    characters = [
+                        '《GQuuuuuuX》中的<b>天手讓葉 (瑪秋)</b> (Amate Yuzuriha / Machu)：她被GQuuuuuuX的魅力吸引，並在戰鬥中展現出驚人的潛力。',
+                        '《機動戰士鋼彈》中的<b>藍巴·拉爾</b> (Ramba Ral)：純粹享受戰鬥的樂趣，將其視為一門藝術。',
+                        '《機動戰士鋼彈》中的<b>初期夏亞</b> (Early Char Aznable)：那個追求與阿姆羅一較高下，充滿攻擊性的紅色彗星。'
+                    ];
+                    break;
+                case 'D':
+                    title = '【和平倡議型駕駛員】';
+                    description = '你深思熟慮，不喜歡無謂的衝突，渴望一個更和平、理性的世界。你傾向於尋找問題的根本原因，並相信溝通和理解是解決紛爭的關鍵。你可能是引導局勢走向新方向的變革者。';
+                    characters = [
+                        '《GQuuuuuuX》中的<b>涅安</b> (Nean)：作為難民，她可能更渴望一個穩定和平的生活。',
+                        '《機動戰士鋼彈》中的<b>米萊·八島</b> (Mirai Yashima)：作為艦橋人員，她常試圖協調矛盾，追求最佳的解決方案。',
+                        '《機動戰士鋼彈》中的<b>芙勞·鮑</b> (Fraw Bow)：作為普通人，她更關注生存與和平。'
+                    ];
+                    break;
+                default:
+                    title = '未知類型';
+                    description = '發生錯誤，請重新嘗試。';
+                    characters = [];
+            }
+
+            let characterHtml = characters.length > 0 ? 
+                '<p><strong>類似的原作知名角色：</strong></p><ul class="character-list">' + 
+                characters.map(char => `<li>${char}</li>`).join('') + '</ul>' : '';
+
+            resultContent.innerHTML = `
+                <h3>${title}</h3>
+                <p>${description}</p>
+                ${characterHtml}
+            `;
+            resultSection.style.display = 'block'; // Show the result section
+            resultSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to result
+        }
+    </script>
+</body>
+</html>
