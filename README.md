@@ -1,2 +1,2 @@
 # PsychologicalTest
-溪裡測驗小遊戲
+心理測驗小遊戲
