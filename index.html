@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理測驗總覽</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 自動調整欄寬 */
+            gap: 25px; /* 卡片間距 */
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .quiz-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            text-decoration: none; /* 移除連結下劃線 */
+            color: inherit; /* 繼承文字顏色 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .quiz-card h2 {
+            color: #007bff;
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .quiz-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 20px;
+            flex-grow: 1; /* 讓內容區塊自動撐開 */
+        }
+        .quiz-card .read-more {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            align-self: flex-end; /* 讓按鈕靠右下角 */
+        }
+        .quiz-card .read-more:hover {
+            background-color: #0056b3;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .quiz-grid {
+                grid-template-columns: 1fr; /* 小螢幕改為單欄顯示 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>探索你的內心世界：心理測驗總覽</h1>
+        <p>歡迎來到我們的心理測驗中心！在這裡，你可以透過一系列有趣的題目，更了解自己的特質與傾向。</p>
+
+        <div class="quiz-grid">
+
+            <a href="gquuuuux_test.html" class="quiz-card">
+                <h2>GQuuuuuuX 心理測驗：你屬於哪種鋼彈駕駛員？</h2>
+                <p>如果你身處《GQuuuuuuX》的宇宙，你會是哪種類型的鋼彈駕駛員？透過這個測驗，探索你在戰場上的潛能與特質，並看看你與哪些原作角色擁有相似的靈魂！</p>
+                <span class="read-more">立即開始</span>
+            </a>
+
+            </div>
+    </div>
+</body>
+</html>
